@@ -39,7 +39,7 @@ a {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 0 65px;
+    padding: 0 55px;
 }
 
 header {
@@ -196,4 +196,3 @@ footer {
     border-top: 1px solid #e5e7eb;
     color: var(--text-muted);
 }
-
