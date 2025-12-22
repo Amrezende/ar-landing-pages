@@ -52,6 +52,60 @@ header .container {
     align-items: center;
 }
 
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BOTÃO HAMBURGUER */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    nav.nav {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background: var(--card);
+        display: none;
+        flex-direction: column;
+        padding: 18px;
+        gap: 10px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        z-index: 100;
+    }
+
+    nav.nav.active {
+        display: flex;
+    }
+
+    nav.nav a {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
 nav a {
     margin-left: 24px;
     color: var(--text-muted);
@@ -189,6 +243,36 @@ section {
         0 20px 45px rgba(0,0,0,0.10),
         0 8px 16px rgba(0,0,0,0.06);
 }
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    z-index: 999;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.05);
+}
+
+/* Mostrar só no mobile */
+@media (min-width: 769px) {
+    .whatsapp-float {
+        display: none;
+    }
+}
+
 
 footer {
     padding: 40px 0;

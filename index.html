@@ -11,20 +11,28 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="container">
-            <strong>AR Landing Pages</strong>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Benefícios</a>
-                <a href="#">Portfólio</a>
-                <a href="#">Contato</a>
-            </nav>
-        </div>
-    </header>
+<header>
+    <div class="container header-flex">
+        <strong class="logo">AR Landing Pages</strong>
+
+        <nav class="nav">
+            <a href="#">Início</a>
+            <a href="#">Benefícios</a>
+            <a href="#">Portfólio</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
 
     <!-- HERO -->
     <section class="hero">
@@ -87,6 +95,12 @@
         <div class="container">
             <h2>Pronto para transformar cliques em clientes?</h2>
 			<a href="https://wa.me/5551993624431" class="btn">Chamar no WhatsApp</a>
+							<a href="https://wa.me/5551993624431"
+				class="whatsapp-float"
+				target="_blank"
+				aria-label="Falar no WhatsApp">
+				💬
+				</a>
 
         </div>
     </section>
@@ -97,6 +111,20 @@
             © 2025 — AR Landing Pages · Transformando cliques em clientes
         </div>
     </footer>
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+	
+	document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
+});
+</script>
 
 </body>
 </html>
