@@ -40,10 +40,11 @@ a {
     max-width: 1200px;
     margin: auto;
     padding: 0 55px;
+	text-align: center;
 }
 
 header {
-    padding: 18px 0;
+    padding: 16px 0;
 }
 
 header .container {
@@ -126,7 +127,7 @@ h1, h2, h3 {
 }
 
 .hero {
-    padding: 110px 0 90px;
+    padding: 60px 0 60px;
     text-align: center;
 }
 
@@ -181,7 +182,6 @@ h1, h2, h3 {
     position: absolute;
 }
 
-
 .btn {
     background: linear-gradient(135deg, #1e40ff, #3b5bff);
     color: #ffffff;
@@ -189,18 +189,16 @@ h1, h2, h3 {
     border-radius: var(--radius);
     font-weight: 600;
     box-shadow: 0 20px 45px rgba(30,64,255,0.45);
-    transition: all 0.2s ease;
+    transition: all 0.2s ease;	
 }
-
 
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 28px 55px rgba(30,64,255,0.55);
 }
 
-
 section {
-    padding: 56px 0;
+    padding: 30px 0;
 }
 
 .section-title {
@@ -210,6 +208,10 @@ section {
 
 .section-title h2 {
     font-size: 2rem;
+}
+
+section.solucao {
+    background: #f4f6ff;
 }
 
 .grid {
@@ -233,6 +235,11 @@ section {
     box-shadow:
         0 20px 45px rgba(0,0,0,0.10),
         0 8px 16px rgba(0,0,0,0.06);
+}
+.card strong {
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
 }
 
 .cards {
@@ -280,7 +287,22 @@ section {
         display: none;
     }
 }
+.cta-final {
+    padding: 50px 0;
+    text-align: center;
+    background: #f4f6ff;
+}
 
+.cta-final h2 {
+    margin-bottom: 24px;
+}
+/*
+.cta-final .btn {
+    display: inline-block;
+    margin-top: 0;
+    position: static;
+}
+*/
 footer {
     padding: 40px 0;
     text-align: center;
