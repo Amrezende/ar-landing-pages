@@ -78,7 +78,7 @@ header .container {
 
     nav.nav {
         position: absolute;
-        top: 55px;
+        top: 20px;
         left: 0;
         width: 100%;
         background: var(--card);
@@ -356,6 +356,28 @@ section.solucao {
 /* Mostrar só no mobile */
 @media (min-width: 769px) {
     .whatsapp-float {
+        display: none;
+    }
+	
+	.hero h1 {
+        font-size: 1.7rem;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+		max-width: 95%;
+        margin: 0 auto 12px;
+    }
+
+    .hero h2 {
+        font-size: 1.1rem;
+        margin: 14px 0;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+	
+	.seo-text {
         display: none;
     }
 }
