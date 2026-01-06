@@ -7,16 +7,13 @@
 
     <title>AR Landing Pages | Criação de Landing Pages que Convertem</title>
 
-
     <!-- Fonte -->
-    
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css">
-	
 	
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-568DNZ8D2W"></script>
@@ -38,10 +35,10 @@
         <strong class="logo">AR Landing Pages</strong>
 
         <nav class="nav">
-            <a href="#">Início</a>
-            <a href="#">Benefícios</a>
-            <a href="#">Portfólio</a>
-            <a href="#">Contato</a>
+            <a href="#inicio">Início</a>
+            <a href="#solucao">Benefícios</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
         </nav>
 
         <button class="menu-toggle" aria-label="Abrir menu">
@@ -52,7 +49,7 @@
     </div>
 </header>
 
-    <section class="hero">
+    <section class="hero" id="inicio">
     <div class="container">
 
         <span class="badge">Criação de Landing Pages Profissionais</span>
@@ -83,7 +80,7 @@
 
 
     <!-- PROBLEMAS -->
-    <section>
+    <section id="problemas">
         <div class="container">
             <div class="section-title">
                 <h2>Seu site está passando por isso?</h2>
@@ -117,7 +114,7 @@
     </section>
 
     <!-- SOLUÇÃO -->
-    <section class="solucao">
+    <section class="solucao" id="solucao">
         <div class="container">
             <div class="section-title">
                 <h2>Como resolvemos isso</h2>
@@ -152,6 +149,59 @@
             </div>
         </div>
     </section>
+	
+	<!-- PORTFÓLIO -->
+	<section id="portfolio">
+    <div class="container">
+        <div class="section-title">
+            <h2>Portfólio</h2>
+            <p>Alguns exemplos de landing pages que podemos criar</p>
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <!--<img src="https://www.kryzalis.com.br/blog/wp-content/uploads/2016/09/afinal-o-que-e-landing-page-e-por-que-ela-e-importante.jpg" 
+                     alt="Exemplo de landing page">--!>
+				<div class="mockup mockup-blue">
+					<div class="mockup-header"></div>
+					<div class="mockup-hero"></div>
+					<div class="mockup-text"></div>
+					<div class="mockup-btn"></div>
+				</div>
+                <strong>Landing Page Conceitual</strong>
+                <p>Exemplo de estrutura focada em conversão e geração de leads.</p>
+            </div>
+
+            <div class="card">
+                <!--<img src="https://www.kryzalis.com.br/blog/wp-content/uploads/2016/09/afinal-o-que-e-landing-page-e-por-que-ela-e-importante.jpg" 
+                     alt="Exemplo de landing page">--!>
+				<div class="mockup mockup-green">
+					<div class="mockup-header"></div>
+					<div class="mockup-hero"></div>
+					<div class="mockup-text"></div>
+					<div class="mockup-btn"></div>
+				</div>
+                <strong>Landing Page para Negócio</strong>
+                <p>Página pensada para captar contatos e mensagens rápidas.</p>
+            </div>
+
+            <div class="card">
+                <!--<img src="https://www.kryzalis.com.br/blog/wp-content/uploads/2016/09/afinal-o-que-e-landing-page-e-por-que-ela-e-importante.jpg" 
+                     alt="Exemplo de landing page">--!>
+				<div class="mockup mockup-purple">
+					<div class="mockup-header"></div>
+					<div class="mockup-hero"></div>
+					<div class="mockup-text"></div>
+					<div class="mockup-btn"></div>
+				</div>
+                <strong>Landing Page para Serviço Profissional</strong>
+                <p>Layout que destaca benefícios e convida ao contato.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- COMO FUNCIONA -->
     <section>
@@ -181,7 +231,7 @@
     </section>
 
     <!-- CTA FINAL -->
-    <section class="cta-final">
+    <section class="cta-final" id="contato">
 		<div class="container">
 			<h2>Vamos criar uma landing page que realmente gera contatos?</h2>
 			<a href="https://wa.me/5551993624431" class="btn">Falar no WhatsApp</a>

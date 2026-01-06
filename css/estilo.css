@@ -7,6 +7,11 @@
     --text: #0f172a;     /* quase preto azulado */
     --text-muted: #475569;
     --radius: 16px;
+	--light: #fff
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -20,6 +25,7 @@ body {
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
+	padding-top: 40px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -28,23 +34,14 @@ a {
     color: inherit;
 }
 
-.container {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 25px;
-}
-
-.containercards {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 55px;
-	text-align: center;
-}
-
 header {
-    padding: 16px 0;
+    
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--light);
+	box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 header .container {
@@ -220,6 +217,21 @@ section.solucao {
     gap: 24px;
 }
 
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.containercards {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 55px;
+	text-align: center;
+}
+
 .card {
     background: var(--card);
     padding: 32px;
@@ -228,6 +240,15 @@ section.solucao {
         0 10px 25px rgba(0,0,0,0.06),
         0 2px 6px rgba(0,0,0,0.04);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    object-fit: cover;
 }
 
 .card:hover {
@@ -257,6 +278,49 @@ section.solucao {
     box-shadow:
         0 20px 45px rgba(0,0,0,0.10),
         0 8px 16px rgba(0,0,0,0.06);
+}
+
+.mockup {
+    height: 170px;
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mockup-blue { background: #eef2ff; }
+.mockup-green { background: #ecfdf5; }
+.mockup-purple { background: #f5f3ff; }
+
+.mockup-header {
+    height: 10px;
+    width: 50%;
+    background: rgba(0,0,0,0.18);
+    border-radius: 6px;
+}
+
+.mockup-hero {
+    height: 24px;
+    width: 80%;
+    background: rgba(0,0,0,0.18);
+    border-radius: 8px;
+}
+
+.mockup-text {
+    height: 14px;
+    width: 100%;
+    background: rgba(0,0,0,0.12);
+    border-radius: 6px;
+}
+
+.mockup-btn {
+    margin-top: auto;
+    height: 22px;
+    width: 40%;
+    background: rgba(59,91,255,0.55);
+    border-radius: 999px;
 }
 
 .whatsapp-float {
